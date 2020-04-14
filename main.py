@@ -8,7 +8,7 @@ import sqlite3
 conn = sqlite3.connect("db.db")
 c = conn.cursor()
 api_url = "http://api.openweathermap.org/data/2.5/weather"
-vk_session = vk_api.VkApi(token='bce07b529888ef3bfb494dd8f07e5587c582a47db3dd0c5e564d9c4283a10b41c2a56b7e23f5ca326f041')
+vk_session = vk_api.VkApi(token='вставить токен сюда')
 longpoll = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 
@@ -107,7 +107,7 @@ def show_weather(user_id):
     keyboard3 = create_keyboard3()
     params = {
         'q': get_location(user_id),
-        'appid': 'e973fd275eb9fc503e12ff73ea7d5c2a',
+        'appid': 'вставить ключ сюда',
         'units': 'metric',
         'lang': 'ru'
     }
@@ -126,7 +126,7 @@ def what_wear(user_id):
     keyboard3 = create_keyboard3()
     params = {
         'q': get_location(user_id),
-        'appid': 'e973fd275eb9fc503e12ff73ea7d5c2a',
+        'appid': 'вставить ключ сюда',
         'units': 'metric',
         'lang': 'ru'
     }
